@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44456",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\raphael.janu\\ITools\\ITools\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}
