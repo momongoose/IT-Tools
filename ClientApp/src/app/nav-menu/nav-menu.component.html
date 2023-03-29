@@ -1,0 +1,33 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3"
+  >
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">ITools</a>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+        [ngClass]="{ show: isExpanded }"
+      >
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-white" [routerLink]="['/']">Login</a>
+          </li>
+          <li *ngIf="login" class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-white" [routerLink]="['/azure']"
+              >Azure</a
+            >
+          </li>
+          <li *ngIf="login" class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-white" [routerLink]="['/ad']"
+              >AD</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
